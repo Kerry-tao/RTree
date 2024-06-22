@@ -19,6 +19,8 @@ void RTree::insert(Point p) {
 
 void RTree::insert(DataPoint p) {
     insert(root,p);
+    // std::cout<<"inser troot"<<root->data_points.size();
+
     if (root->data_points.size() > maxNodeSize || root->children.size() > maxNodeSize) {
         RTreeNode* newRoot = new RTreeNode(false);
         newRoot->children.push_back(root);
@@ -41,6 +43,7 @@ void RTree::insert(RTreeNode* node, Point p) {
     node->updateMBR();
 }
 void RTree::insert(RTreeNode* node, DataPoint p) {
+
     if (node->isLeaf) {
         node->data_points.push_back(p);
     } else {
@@ -50,6 +53,7 @@ void RTree::insert(RTreeNode* node, DataPoint p) {
             splitNode2(node, bestIndex);
         }
     }
+
     node->updateMBR2();
     node->updateVec();
     node->updateMatrix();
@@ -90,6 +94,7 @@ void RTree::printTree() const {
 }
 
 void RTree::printTree2() const {
+    root->printNode();
     printTree2(root, 0);
 }
 
@@ -156,6 +161,9 @@ void RTree::splitNode(RTreeNode* parent, int index) {
 
 
 void RTree::splitNode2(RTreeNode* parent, int index) {
+
+    // parent->printNode();
+
     RTreeNode* node = parent->children[index];
     RTreeNode* newNode = new RTreeNode(node->isLeaf);
 
@@ -184,24 +192,24 @@ void RTree::splitNode2(RTreeNode* parent, int index) {
     newNode->updateMatrix();
 }
 void RTree::printTree(RTreeNode* node, int depth) const {
-    for (int i = 0; i < depth; ++i) std::cout << "  ";
-    std::cout << "Node(" << (node->isLeaf ? "Leaf" : "Internal") << "): ";
-    if (node->isLeaf) {
-        for (const auto& p : node->points) {
-            std::cout << "(" << p.x << "," << p.y << ") ";
-        }
-    } else {
-        for (const auto& child : node->children) {
-            std::cout << "[" << child->mbr.topLeft.x << "," << child->mbr.topLeft.y << "] - ";
-            std::cout << "[" << child->mbr.bottomRight.x << "," << child->mbr.bottomRight.y << "] ";
-        }
-    }
-    std::cout << std::endl;
-    if (!node->isLeaf) {
-        for (const auto& child : node->children) {
-            printTree(child, depth + 1);
-        }
-    }
+    // for (int i = 0; i < depth; ++i) std::cout << "  ";
+    // std::cout << "Node(" << (node->isLeaf ? "Leaf" : "Internal") << "): ";
+    // if (node->isLeaf) {
+    //     for (const auto& p : node->points) {
+    //         std::cout << "(" << p.x << "," << p.y << ") ";
+    //     }
+    // } else {
+    //     for (const auto& child : node->children) {
+    //         std::cout << "[" << child->mbr.topLeft.x << "," << child->mbr.topLeft.y << "] - ";
+    //         std::cout << "[" << child->mbr.bottomRight.x << "," << child->mbr.bottomRight.y << "] ";
+    //     }
+    // }
+    // std::cout << std::endl;
+    // if (!node->isLeaf) {
+    //     for (const auto& child : node->children) {
+    //         printTree(child, depth + 1);
+    //     }
+    // }
 }
 
 void RTree::printTree2(RTreeNode* node, int depth) const {
@@ -214,7 +222,7 @@ void RTree::printTree2(RTreeNode* node, int depth) const {
         }
 
     } else {
-        node->printNode();
+        // node->printNode();
         for (const auto& child : node->children) {
             child->printNode();
         }

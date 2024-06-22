@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "c:/Users/28927/Desktop/RTree - \u526f\u672c/cmake-build-debug"
+			"value" : "c:/Users/28927/Documents/RTree/cmake-build-debug"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -575,7 +575,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/28927/Desktop/RTree - \u526f\u672c/cmake-build-debug/CMakeFiles/pkgRedirects"
+			"value" : "C:/Users/28927/Documents/RTree/cmake-build-debug/CMakeFiles/pkgRedirects"
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -647,7 +647,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "C:/Users/28927/Desktop/RTree - \u526f\u672c"
+			"value" : "C:/Users/28927/Documents/RTree"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -1279,7 +1279,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/28927/Desktop/RTree - \u526f\u672c/cmake-build-debug"
+			"value" : "C:/Users/28927/Documents/RTree/cmake-build-debug"
 		},
 		{
 			"name" : "RTree_IS_TOP_LEVEL",
@@ -1303,7 +1303,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/28927/Desktop/RTree - \u526f\u672c"
+			"value" : "C:/Users/28927/Documents/RTree"
 		},
 		{
 			"name" : "_CMAKE_LINKER_PUSHPOP_STATE_SUPPORTED",

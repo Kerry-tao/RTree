@@ -115,7 +115,11 @@ void RTreeNode::updateMatrix() {
                         break;
                     }
                 }
-
+                if(allZero) {
+                    for (int i = 0; i < 4; ++i) {
+                        matrix[j][i] = 0;
+                    }
+                }
                 if (!allZero) {
                     for (int i = 0; i < 4; ++i) {
                         int minDistance = numeric_limits<int>::max();
@@ -124,7 +128,7 @@ void RTreeNode::updateMatrix() {
                                 minDistance = min(minDistance, obj.distance[i]);
                             }
                         }
-                        matrix[i][j] = minDistance;
+                        matrix[j][i] = minDistance;
                     }
                 }
             }
