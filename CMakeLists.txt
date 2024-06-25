@@ -8,4 +8,7 @@ add_executable(RTree main.cpp
         RTree.h
         RTree.cpp
         Node.h
-        Node.cpp)
+        Node.cpp
+#        RTree.cpp
+#        RTree2.h
+        )

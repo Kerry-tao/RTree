@@ -14,16 +14,17 @@ struct Point {
 class DataPoint
 {
 public:
+    std::string name;
     Point coordinate;
     std::vector<int> vector;
     std::vector<int> distance;
-    DataPoint(const Point &point, const std::vector<int> &vector) : coordinate(point), vector(vector) {};
+    DataPoint(const std::string &name,const Point &point, const std::vector<int> &vector) :name(name), coordinate(point), vector(vector) {};
     void print() const;
 };
 
 struct Rectangle {
-    Point topLeft, bottomRight;
-    Rectangle(Point topLeft = Point(), Point bottomRight = Point());
+    Point bottomLeft, topRight;
+    Rectangle(Point bottomLeft = Point(), Point topRight = Point());
 
     bool contains(Point p) const;
     bool intersects(Rectangle other) const;
