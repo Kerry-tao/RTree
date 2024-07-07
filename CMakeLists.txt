@@ -9,6 +9,8 @@ add_executable(RTree main.cpp
         RTree.cpp
         Node.h
         Node.cpp
-#        RTree.cpp
+        DataProcessor.h
+        DataProcessor.cpp
+        #        RTree.cpp
 #        RTree2.h
         )

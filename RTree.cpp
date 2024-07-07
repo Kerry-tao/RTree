@@ -5,15 +5,15 @@ RTree::RTree(int maxNodeSize) : maxNodeSize(maxNodeSize) {
     root = new RTreeNode(true);
 }
 
-void RTree::insert(Point p) {
-    // insert(root, p);
-    // if (root->points.size() > maxNodeSize || root->children.size() > maxNodeSize) {
-    //     RTreeNode* newRoot = new RTreeNode(false);
-    //     newRoot->children.push_back(root);
-    //     splitNode(newRoot, 0);
-    //     root = newRoot;
-    // }
-}
+// void RTree::insert(Point p) {
+//     // insert(root, p);
+//     // if (root->points.size() > maxNodeSize || root->children.size() > maxNodeSize) {
+//     //     RTreeNode* newRoot = new RTreeNode(false);
+//     //     newRoot->children.push_back(root);
+//     //     splitNode(newRoot, 0);
+//     //     root = newRoot;
+//     // }
+// }
 
 void RTree::insert(DataPoint p) {
     insert(root,p);
@@ -27,18 +27,18 @@ void RTree::insert(DataPoint p) {
     }
 }
 
-void RTree::insert(RTreeNode* node, Point p) {
-    // if (node->isLeaf) {
-    //     node->points.push_back(p);
-    // } else {
-    //     int bestIndex = chooseSubtree(node, p);
-    //     insert(node->children[bestIndex], p);
-    //     if (node->children[bestIndex]->points.size() > maxNodeSize || node->children[bestIndex]->children.size() > maxNodeSize) {
-    //         splitNode(node, bestIndex);
-    //     }
-    // }
-    // node->updateMBR();
-}
+// void RTree::insert(RTreeNode* node, Point p) {
+//     // if (node->isLeaf) {
+//     //     node->points.push_back(p);
+//     // } else {
+//     //     int bestIndex = chooseSubtree(node, p);
+//     //     insert(node->children[bestIndex], p);
+//     //     if (node->children[bestIndex]->points.size() > maxNodeSize || node->children[bestIndex]->children.size() > maxNodeSize) {
+//     //         splitNode(node, bestIndex);
+//     //     }
+//     // }
+//     // node->updateMBR();
+// }
 
 void RTree::insert(RTreeNode* node, DataPoint p) {
 
@@ -84,33 +84,33 @@ void RTree::calculateDistances(std::vector<DataPoint> &dataPoints)
     }
 }
 
-void RTree::printTree() const {
-    // printTree(root, 0);
-}
+// void RTree::printTree() const {
+//     // printTree(root, 0);
+// }
 
 void RTree::printTree2() const {
     root->printNode();
     printTree2(root, 0);
 }
 
-int RTree::chooseSubtree(RTreeNode* node, Point p) const {
-    // int bestIndex = -1;
-    // float bestAreaIncrease = std::numeric_limits<float>::max();
-    // Rectangle pointRect(p, p);
-    // for (int i = 0; i < node->children.size(); ++i) {
-    //     Rectangle tempMBR = node->children[i]->mbr;
-    //     tempMBR.bottomLeft.x = std::min(tempMBR.bottomLeft.x, p.x);
-    //     tempMBR.bottomLeft.y = std::min(tempMBR.bottomLeft.y, p.y);
-    //     tempMBR.topRight.x = std::max(tempMBR.topRight.x, p.x);
-    //     tempMBR.topRight.y = std::max(tempMBR.topRight.y, p.y);
-    //     float areaIncrease = tempMBR.area() - node->children[i]->mbr.area();
-    //     if (areaIncrease < bestAreaIncrease) {
-    //         bestAreaIncrease = areaIncrease;
-    //         bestIndex = i;
-    //     }
-    // }
-    // return bestIndex;
-}
+// int RTree::chooseSubtree(RTreeNode* node, Point p) const {
+//     // int bestIndex = -1;
+//     // float bestAreaIncrease = std::numeric_limits<float>::max();
+//     // Rectangle pointRect(p, p);
+//     // for (int i = 0; i < node->children.size(); ++i) {
+//     //     Rectangle tempMBR = node->children[i]->mbr;
+//     //     tempMBR.bottomLeft.x = std::min(tempMBR.bottomLeft.x, p.x);
+//     //     tempMBR.bottomLeft.y = std::min(tempMBR.bottomLeft.y, p.y);
+//     //     tempMBR.topRight.x = std::max(tempMBR.topRight.x, p.x);
+//     //     tempMBR.topRight.y = std::max(tempMBR.topRight.y, p.y);
+//     //     float areaIncrease = tempMBR.area() - node->children[i]->mbr.area();
+//     //     if (areaIncrease < bestAreaIncrease) {
+//     //         bestAreaIncrease = areaIncrease;
+//     //         bestIndex = i;
+//     //     }
+//     // }
+//     // return bestIndex;
+// }
 
 int RTree::chooseSubtree(RTreeNode* node, DataPoint p) const {
     int bestIndex = -1;
@@ -131,26 +131,26 @@ int RTree::chooseSubtree(RTreeNode* node, DataPoint p) const {
     return bestIndex;
 }
 
-void RTree::splitNode(RTreeNode* parent, int index) {
-    // RTreeNode* node = parent->children[index];
-    // RTreeNode* newNode = new RTreeNode(node->isLeaf);
-    //
-    // // simple split logic: distribute half elements to new node
-    // int halfSize = node->points.size() / 2;
-    // newNode->points.assign(node->points.begin() + halfSize, node->points.end());
-    // node->points.erase(node->points.begin() + halfSize, node->points.end());
-    //
-    // if (!node->isLeaf) {
-    //     halfSize = node->children.size() / 2;
-    //     newNode->children.assign(node->children.begin() + halfSize, node->children.end());
-    //     node->children.erase(node->children.begin() + halfSize, node->children.end());
-    // }
-    //
-    // parent->children.push_back(newNode);
-    // parent->updateMBR();
-    // node->updateMBR();
-    // newNode->updateMBR();
-}
+// void RTree::splitNode(RTreeNode* parent, int index) {
+//     // RTreeNode* node = parent->children[index];
+//     // RTreeNode* newNode = new RTreeNode(node->isLeaf);
+//     //
+//     // // simple split logic: distribute half elements to new node
+//     // int halfSize = node->points.size() / 2;
+//     // newNode->points.assign(node->points.begin() + halfSize, node->points.end());
+//     // node->points.erase(node->points.begin() + halfSize, node->points.end());
+//     //
+//     // if (!node->isLeaf) {
+//     //     halfSize = node->children.size() / 2;
+//     //     newNode->children.assign(node->children.begin() + halfSize, node->children.end());
+//     //     node->children.erase(node->children.begin() + halfSize, node->children.end());
+//     // }
+//     //
+//     // parent->children.push_back(newNode);
+//     // parent->updateMBR();
+//     // node->updateMBR();
+//     // newNode->updateMBR();
+// }
 
 void RTree::splitNode2(RTreeNode* parent, int index) {
 

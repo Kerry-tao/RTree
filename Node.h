@@ -18,6 +18,7 @@ public:
     Point coordinate;
     std::vector<int> vector;
     std::vector<int> distance;
+    DataPoint():name(""),coordinate((0,0)){};
     DataPoint(const std::string &name,const Point &point, const std::vector<int> &vector) :name(name), coordinate(point), vector(vector) {};
     void print() const;
 };
