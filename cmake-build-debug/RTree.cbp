@@ -82,10 +82,28 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="C:/Users/28927/Documents/RTree/DataOutsourcing.cpp">
+			<Option target="RTree"/>
+		</Unit>
+		<Unit filename="C:/Users/28927/Documents/RTree/DataOutsourcing.h">
+			<Option target="RTree"/>
+		</Unit>
 		<Unit filename="C:/Users/28927/Documents/RTree/DataProcessor.cpp">
 			<Option target="RTree"/>
 		</Unit>
 		<Unit filename="C:/Users/28927/Documents/RTree/DataProcessor.h">
+			<Option target="RTree"/>
+		</Unit>
+		<Unit filename="C:/Users/28927/Documents/RTree/EncNode.cpp">
+			<Option target="RTree"/>
+		</Unit>
+		<Unit filename="C:/Users/28927/Documents/RTree/EncNode.h">
+			<Option target="RTree"/>
+		</Unit>
+		<Unit filename="C:/Users/28927/Documents/RTree/EncRTree.cpp">
+			<Option target="RTree"/>
+		</Unit>
+		<Unit filename="C:/Users/28927/Documents/RTree/EncRTree.h">
 			<Option target="RTree"/>
 		</Unit>
 		<Unit filename="C:/Users/28927/Documents/RTree/Node.cpp">

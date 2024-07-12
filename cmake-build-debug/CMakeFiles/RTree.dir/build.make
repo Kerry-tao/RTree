@@ -124,12 +124,57 @@ CMakeFiles/RTree.dir/DataProcessor.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/RTree.dir/DataProcessor.cpp.s"
 	D:\SOFTWA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\28927\Documents\RTree\DataProcessor.cpp -o CMakeFiles\RTree.dir\DataProcessor.cpp.s
 
+CMakeFiles/RTree.dir/EncRTree.cpp.obj: CMakeFiles/RTree.dir/flags.make
+CMakeFiles/RTree.dir/EncRTree.cpp.obj: C:/Users/28927/Documents/RTree/EncRTree.cpp
+CMakeFiles/RTree.dir/EncRTree.cpp.obj: CMakeFiles/RTree.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\28927\Documents\RTree\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/RTree.dir/EncRTree.cpp.obj"
+	D:\SOFTWA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/RTree.dir/EncRTree.cpp.obj -MF CMakeFiles\RTree.dir\EncRTree.cpp.obj.d -o CMakeFiles\RTree.dir\EncRTree.cpp.obj -c C:\Users\28927\Documents\RTree\EncRTree.cpp
+
+CMakeFiles/RTree.dir/EncRTree.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/RTree.dir/EncRTree.cpp.i"
+	D:\SOFTWA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\28927\Documents\RTree\EncRTree.cpp > CMakeFiles\RTree.dir\EncRTree.cpp.i
+
+CMakeFiles/RTree.dir/EncRTree.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/RTree.dir/EncRTree.cpp.s"
+	D:\SOFTWA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\28927\Documents\RTree\EncRTree.cpp -o CMakeFiles\RTree.dir\EncRTree.cpp.s
+
+CMakeFiles/RTree.dir/EncNode.cpp.obj: CMakeFiles/RTree.dir/flags.make
+CMakeFiles/RTree.dir/EncNode.cpp.obj: C:/Users/28927/Documents/RTree/EncNode.cpp
+CMakeFiles/RTree.dir/EncNode.cpp.obj: CMakeFiles/RTree.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\28927\Documents\RTree\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/RTree.dir/EncNode.cpp.obj"
+	D:\SOFTWA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/RTree.dir/EncNode.cpp.obj -MF CMakeFiles\RTree.dir\EncNode.cpp.obj.d -o CMakeFiles\RTree.dir\EncNode.cpp.obj -c C:\Users\28927\Documents\RTree\EncNode.cpp
+
+CMakeFiles/RTree.dir/EncNode.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/RTree.dir/EncNode.cpp.i"
+	D:\SOFTWA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\28927\Documents\RTree\EncNode.cpp > CMakeFiles\RTree.dir\EncNode.cpp.i
+
+CMakeFiles/RTree.dir/EncNode.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/RTree.dir/EncNode.cpp.s"
+	D:\SOFTWA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\28927\Documents\RTree\EncNode.cpp -o CMakeFiles\RTree.dir\EncNode.cpp.s
+
+CMakeFiles/RTree.dir/DataOutsourcing.cpp.obj: CMakeFiles/RTree.dir/flags.make
+CMakeFiles/RTree.dir/DataOutsourcing.cpp.obj: C:/Users/28927/Documents/RTree/DataOutsourcing.cpp
+CMakeFiles/RTree.dir/DataOutsourcing.cpp.obj: CMakeFiles/RTree.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\28927\Documents\RTree\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/RTree.dir/DataOutsourcing.cpp.obj"
+	D:\SOFTWA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/RTree.dir/DataOutsourcing.cpp.obj -MF CMakeFiles\RTree.dir\DataOutsourcing.cpp.obj.d -o CMakeFiles\RTree.dir\DataOutsourcing.cpp.obj -c C:\Users\28927\Documents\RTree\DataOutsourcing.cpp
+
+CMakeFiles/RTree.dir/DataOutsourcing.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/RTree.dir/DataOutsourcing.cpp.i"
+	D:\SOFTWA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\28927\Documents\RTree\DataOutsourcing.cpp > CMakeFiles\RTree.dir\DataOutsourcing.cpp.i
+
+CMakeFiles/RTree.dir/DataOutsourcing.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/RTree.dir/DataOutsourcing.cpp.s"
+	D:\SOFTWA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\28927\Documents\RTree\DataOutsourcing.cpp -o CMakeFiles\RTree.dir\DataOutsourcing.cpp.s
+
 # Object files for target RTree
 RTree_OBJECTS = \
 "CMakeFiles/RTree.dir/main.cpp.obj" \
 "CMakeFiles/RTree.dir/RTree.cpp.obj" \
 "CMakeFiles/RTree.dir/Node.cpp.obj" \
-"CMakeFiles/RTree.dir/DataProcessor.cpp.obj"
+"CMakeFiles/RTree.dir/DataProcessor.cpp.obj" \
+"CMakeFiles/RTree.dir/EncRTree.cpp.obj" \
+"CMakeFiles/RTree.dir/EncNode.cpp.obj" \
+"CMakeFiles/RTree.dir/DataOutsourcing.cpp.obj"
 
 # External object files for target RTree
 RTree_EXTERNAL_OBJECTS =
@@ -138,11 +183,14 @@ RTree.exe: CMakeFiles/RTree.dir/main.cpp.obj
 RTree.exe: CMakeFiles/RTree.dir/RTree.cpp.obj
 RTree.exe: CMakeFiles/RTree.dir/Node.cpp.obj
 RTree.exe: CMakeFiles/RTree.dir/DataProcessor.cpp.obj
+RTree.exe: CMakeFiles/RTree.dir/EncRTree.cpp.obj
+RTree.exe: CMakeFiles/RTree.dir/EncNode.cpp.obj
+RTree.exe: CMakeFiles/RTree.dir/DataOutsourcing.cpp.obj
 RTree.exe: CMakeFiles/RTree.dir/build.make
 RTree.exe: CMakeFiles/RTree.dir/linkLibs.rsp
 RTree.exe: CMakeFiles/RTree.dir/objects1.rsp
 RTree.exe: CMakeFiles/RTree.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\28927\Documents\RTree\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable RTree.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\28927\Documents\RTree\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable RTree.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\RTree.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

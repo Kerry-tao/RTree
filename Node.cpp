@@ -2,7 +2,7 @@
 #include <iostream>
 using namespace std;
 // Point methods
-Point::Point(float x, float y) : x(x), y(y) {}
+Point::Point(int x, int y) : x(x), y(y) {}
 
 //DataInfo
 
@@ -14,7 +14,7 @@ void DataPoint::print() const
         cout << elem << ",";
     }
     cout << "),distance:(";
-    for (int elem: distance) {
+    for (int elem : distance) {
         cout << elem << ",";
     }
     cout<<")"<< std::endl;
@@ -41,37 +41,15 @@ RTreeNode::RTreeNode(bool isLeaf) : isLeaf(isLeaf) {
     matrix.assign(4, std::vector<int>(4, 0));
 }
 
-void RTreeNode::updateMBR() {
-    if (isLeaf) {
-        if (points.empty()) return;
-        mbr = Rectangle(points[0], points[0]);
-        for (const auto& p : points) {
-            mbr.bottomLeft.x = std::min(mbr.bottomLeft.x, p.x);
-            mbr.bottomLeft.y = std::min(mbr.bottomLeft.y, p.y);
-            mbr.topRight.x = std::max(mbr.topRight.x, p.x);
-            mbr.topRight.y = std::max(mbr.topRight.y, p.y);
-        }
-    } else {
-        if (children.empty()) return;
-        mbr = children[0]->mbr;
-        for (const auto& child : children) {
-            mbr.bottomLeft.x = std::min(mbr.bottomLeft.x, child->mbr.bottomLeft.x);
-            mbr.bottomLeft.y = std::min(mbr.bottomLeft.y, child->mbr.bottomLeft.y);
-            mbr.topRight.x = std::max(mbr.topRight.x, child->mbr.topRight.x);
-            mbr.topRight.y = std::max(mbr.topRight.y, child->mbr.topRight.y);
-        }
-    }
-}
-
 void RTreeNode::updateMBR2() {
     if (isLeaf) {
         if (data_points.empty()) return;
-        mbr = Rectangle(data_points[0].coordinate, data_points[0].coordinate);
+        mbr = Rectangle(data_points[0]->coordinate, data_points[0]->coordinate);
         for (const auto& p : data_points) {
-            mbr.bottomLeft.x = std::min(mbr.bottomLeft.x, p.coordinate.x);
-            mbr.bottomLeft.y = std::min(mbr.bottomLeft.y, p.coordinate.y);
-            mbr.topRight.x = std::max(mbr.topRight.x, p.coordinate.x);
-            mbr.topRight.y = std::max(mbr.topRight.y, p.coordinate.y);
+            mbr.bottomLeft.x = std::min(mbr.bottomLeft.x, p->coordinate.x);
+            mbr.bottomLeft.y = std::min(mbr.bottomLeft.y, p->coordinate.y);
+            mbr.topRight.x = std::max(mbr.topRight.x, p->coordinate.x);
+            mbr.topRight.y = std::max(mbr.topRight.y, p->coordinate.y);
         }
     } else {
         if (children.empty()) return;
@@ -88,10 +66,10 @@ void RTreeNode::updateMBR2() {
 void RTreeNode::updateVec() {
     if (isLeaf) {
         if (data_points.empty()) return;
-        vector ={0,0,0,0};
+        vector.resize(maxDimension,0);
         for (const auto& p : data_points) {
-            for(int i=0;i<p.vector.size();i++) {
-                vector[i]|=p.vector[i];
+            for(int i=0;i<p->vector.size();i++) {
+                vector[i]|=p->vector[i];
             }
         }
     } else {
@@ -108,25 +86,25 @@ void RTreeNode::updateVec() {
 void RTreeNode::updateMatrix() {
     if (isLeaf) {
         if (data_points.empty()) return;
-            for (int j = 0; j < 4; ++j) {
+            for (int j = 0; j < maxDimension; ++j) {
                 bool allZero = true;
                 for (const auto& obj : data_points) {
-                    if (obj.vector[j] != 0) {
+                    if (obj->vector[j] != 0) {
                         allZero = false;
                         break;
                     }
                 }
                 if(allZero) {
-                    for (int i = 0; i < 4; ++i) {
+                    for (int i = 0; i < maxDimension; ++i) {
                         matrix[j][i] = 0;
                     }
                 }
                 if (!allZero) {
-                    for (int i = 0; i < 4; ++i) {
+                    for (int i = 0; i < maxDimension; ++i) {
                         int minDistance = numeric_limits<int>::max();
                         for (const auto& obj : data_points) {
-                            if (obj.vector[j] == 1) {
-                                minDistance = min(minDistance, obj.distance[i]);
+                            if (obj->vector[j] == 1) {
+                                minDistance = min(minDistance, obj->distance[i]);
                             }
                         }
                         matrix[j][i] = minDistance;
@@ -136,8 +114,8 @@ void RTreeNode::updateMatrix() {
     } else {
         if (children.empty()) return;
         matrix = children[0]->matrix;
-        for (int j = 0; j < 4; ++j) {
-            for (int i = 0; i < 4; ++i) {
+        for (int j = 0; j < maxDimension; ++j) {
+            for (int i = 0; i < maxDimension; ++i) {
                 int minDistance = 0;
                 for (const auto& obj : children) {
                      minDistance = min(matrix[i][j], obj->matrix[i][j]);
@@ -155,6 +133,7 @@ void RTreeNode::printNode() {
     for (int elem : vector){
         std::cout << elem << ",";
     }
+
     std::cout<<")"<<endl;
     for (const auto& row : matrix) {
         for (int val : row) {

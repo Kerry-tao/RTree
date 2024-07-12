@@ -11,6 +11,12 @@ add_executable(RTree main.cpp
         Node.cpp
         DataProcessor.h
         DataProcessor.cpp
+        EncRTree.h
+        EncRTree.cpp
+        EncNode.h
+        EncNode.cpp
+        DataOutsourcing.h
+        DataOutsourcing.cpp
         #        RTree.cpp
 #        RTree2.h
         )

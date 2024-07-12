@@ -175,4 +175,7 @@ CMakeFiles/RTree.dir/RTree.cpp.obj: \
  D:/software_production/CLion\ 2024.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cfloat \
  D:/software_production/CLion\ 2024.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/float.h \
  D:/software_production/CLion\ 2024.1.3/bin/mingw/x86_64-w64-mingw32/include/float.h \
+ D:/software_production/CLion\ 2024.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cstdint \
+ D:/software_production/CLion\ 2024.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/stdint.h \
+ D:/software_production/CLion\ 2024.1.3/bin/mingw/x86_64-w64-mingw32/include/stdint.h \
  C:\Users\28927\Documents\RTree\RTree.h

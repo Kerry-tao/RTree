@@ -7,16 +7,16 @@
 #include <iostream>
 class RTree {
 public:
+    RTreeNode* root;
     RTree(int maxNodeSize = 4);
     // void insert(Point p);
     void insert(DataPoint p);
     // void printTree() const;
     void printTree2() const;
     void calculateDistances(std::vector<DataPoint>& dataPoints);
+    void traverseAndEncrpt(RTreeNode* node);
 private:
-    RTreeNode* root;
     int maxNodeSize;
-
     //第一种分裂方式
     // void insert(RTreeNode* node, Point p);
     void insert(RTreeNode* node,DataPoint p);
@@ -25,7 +25,7 @@ private:
     // void splitNode(RTreeNode* parent, int index);
     void splitNode2(RTreeNode* parent, int index);
     void printTree2(RTreeNode* node, int depth) const;
-
+    void processVector(const std::vector<int>& vec) const;
 };
 
 #endif // RTREE_H

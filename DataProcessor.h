@@ -10,13 +10,14 @@ class DataProcessor {
 public:
     std::vector<DataPoint> dataList;
     DataProcessor(const std::string &locFilePath, const std::string &docFilePath);
-    void processFiles(int maxLines);
+    void processFiles(int maxLines,int maxDimension);
+    void writeDataToFile(const std::string &outputFilePath);
 
 private:
     std::string locFilePath;
     std::string docFilePath;
-    void processLocFile(int maxLines, std::vector<DataPoint> &dataList);
-    void processDocFile(int maxLines, std::vector<DataPoint> &dataList);
+    void processLocFile(int maxLines,int maxDimension, std::vector<DataPoint> &dataList);
+    void processDocFile(int maxLines,int maxDimension, std::vector<DataPoint> &dataList);
     void printDataList(const std::vector<DataPoint> &dataList);
 };
 

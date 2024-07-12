@@ -128,6 +128,30 @@ RTree/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\RTree.dir\build.make CMakeFiles/RTree.dir/build
 .PHONY : RTree/fast
 
+DataOutsourcing.obj: DataOutsourcing.cpp.obj
+.PHONY : DataOutsourcing.obj
+
+# target to build an object file
+DataOutsourcing.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RTree.dir\build.make CMakeFiles/RTree.dir/DataOutsourcing.cpp.obj
+.PHONY : DataOutsourcing.cpp.obj
+
+DataOutsourcing.i: DataOutsourcing.cpp.i
+.PHONY : DataOutsourcing.i
+
+# target to preprocess a source file
+DataOutsourcing.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RTree.dir\build.make CMakeFiles/RTree.dir/DataOutsourcing.cpp.i
+.PHONY : DataOutsourcing.cpp.i
+
+DataOutsourcing.s: DataOutsourcing.cpp.s
+.PHONY : DataOutsourcing.s
+
+# target to generate assembly for a file
+DataOutsourcing.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RTree.dir\build.make CMakeFiles/RTree.dir/DataOutsourcing.cpp.s
+.PHONY : DataOutsourcing.cpp.s
+
 DataProcessor.obj: DataProcessor.cpp.obj
 .PHONY : DataProcessor.obj
 
@@ -151,6 +175,54 @@ DataProcessor.s: DataProcessor.cpp.s
 DataProcessor.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\RTree.dir\build.make CMakeFiles/RTree.dir/DataProcessor.cpp.s
 .PHONY : DataProcessor.cpp.s
+
+EncNode.obj: EncNode.cpp.obj
+.PHONY : EncNode.obj
+
+# target to build an object file
+EncNode.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RTree.dir\build.make CMakeFiles/RTree.dir/EncNode.cpp.obj
+.PHONY : EncNode.cpp.obj
+
+EncNode.i: EncNode.cpp.i
+.PHONY : EncNode.i
+
+# target to preprocess a source file
+EncNode.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RTree.dir\build.make CMakeFiles/RTree.dir/EncNode.cpp.i
+.PHONY : EncNode.cpp.i
+
+EncNode.s: EncNode.cpp.s
+.PHONY : EncNode.s
+
+# target to generate assembly for a file
+EncNode.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RTree.dir\build.make CMakeFiles/RTree.dir/EncNode.cpp.s
+.PHONY : EncNode.cpp.s
+
+EncRTree.obj: EncRTree.cpp.obj
+.PHONY : EncRTree.obj
+
+# target to build an object file
+EncRTree.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RTree.dir\build.make CMakeFiles/RTree.dir/EncRTree.cpp.obj
+.PHONY : EncRTree.cpp.obj
+
+EncRTree.i: EncRTree.cpp.i
+.PHONY : EncRTree.i
+
+# target to preprocess a source file
+EncRTree.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RTree.dir\build.make CMakeFiles/RTree.dir/EncRTree.cpp.i
+.PHONY : EncRTree.cpp.i
+
+EncRTree.s: EncRTree.cpp.s
+.PHONY : EncRTree.s
+
+# target to generate assembly for a file
+EncRTree.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RTree.dir\build.make CMakeFiles/RTree.dir/EncRTree.cpp.s
+.PHONY : EncRTree.cpp.s
 
 Node.obj: Node.cpp.obj
 .PHONY : Node.obj
@@ -233,9 +305,18 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... RTree
+	@echo ... DataOutsourcing.obj
+	@echo ... DataOutsourcing.i
+	@echo ... DataOutsourcing.s
 	@echo ... DataProcessor.obj
 	@echo ... DataProcessor.i
 	@echo ... DataProcessor.s
+	@echo ... EncNode.obj
+	@echo ... EncNode.i
+	@echo ... EncNode.s
+	@echo ... EncRTree.obj
+	@echo ... EncRTree.i
+	@echo ... EncRTree.s
 	@echo ... Node.obj
 	@echo ... Node.i
 	@echo ... Node.s

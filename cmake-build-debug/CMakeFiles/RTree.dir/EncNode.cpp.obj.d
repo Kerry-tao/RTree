@@ -1,17 +1,15 @@
-CMakeFiles/RTree.dir/main.cpp.obj: \
- C:\Users\28927\Documents\RTree\main.cpp \
- C:\Users\28927\Documents\RTree\Node.h \
- D:/software_production/CLion\ 2024.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/iostream \
+CMakeFiles/RTree.dir/EncNode.cpp.obj: \
+ C:\Users\28927\Documents\RTree\EncNode.cpp \
+ C:\Users\28927\Documents\RTree\EncNode.h \
+ D:/software_production/CLion\ 2024.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/string \
  D:/software_production/CLion\ 2024.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/requires_hosted.h \
  D:/software_production/CLion\ 2024.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/c++config.h \
  D:/software_production/CLion\ 2024.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/os_defines.h \
  D:/software_production/CLion\ 2024.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/cpu_defines.h \
  D:/software_production/CLion\ 2024.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/pstl/pstl_config.h \
- D:/software_production/CLion\ 2024.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ostream \
- D:/software_production/CLion\ 2024.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ios \
- D:/software_production/CLion\ 2024.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/iosfwd \
  D:/software_production/CLion\ 2024.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stringfwd.h \
  D:/software_production/CLion\ 2024.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/memoryfwd.h \
+ D:/software_production/CLion\ 2024.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/char_traits.h \
  D:/software_production/CLion\ 2024.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/postypes.h \
  D:/software_production/CLion\ 2024.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cwchar \
  D:/software_production/CLion\ 2024.1.3/bin/mingw/x86_64-w64-mingw32/include/wchar.h \
@@ -27,58 +25,26 @@ CMakeFiles/RTree.dir/main.cpp.obj: \
  D:/software_production/CLion\ 2024.1.3/bin/mingw/x86_64-w64-mingw32/include/_mingw_stat64.h \
  D:/software_production/CLion\ 2024.1.3/bin/mingw/x86_64-w64-mingw32/include/swprintf.inl \
  D:/software_production/CLion\ 2024.1.3/bin/mingw/x86_64-w64-mingw32/include/sec_api/wchar_s.h \
- D:/software_production/CLion\ 2024.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/exception \
- D:/software_production/CLion\ 2024.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/exception.h \
- D:/software_production/CLion\ 2024.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/exception_ptr.h \
- D:/software_production/CLion\ 2024.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/exception_defines.h \
- D:/software_production/CLion\ 2024.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/cxxabi_init_exception.h \
- D:/software_production/CLion\ 2024.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/stddef.h \
- D:/software_production/CLion\ 2024.1.3/bin/mingw/x86_64-w64-mingw32/include/stddef.h \
- D:/software_production/CLion\ 2024.1.3/bin/mingw/x86_64-w64-mingw32/include/crtdefs.h \
- D:/software_production/CLion\ 2024.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/typeinfo \
- D:/software_production/CLion\ 2024.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/hash_bytes.h \
- D:/software_production/CLion\ 2024.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/new \
- D:/software_production/CLion\ 2024.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/move.h \
  D:/software_production/CLion\ 2024.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/type_traits \
- D:/software_production/CLion\ 2024.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/nested_exception.h \
- D:/software_production/CLion\ 2024.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/char_traits.h \
+ D:/software_production/CLion\ 2024.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/allocator.h \
+ D:/software_production/CLion\ 2024.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/c++allocator.h \
+ D:/software_production/CLion\ 2024.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/new_allocator.h \
+ D:/software_production/CLion\ 2024.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/new \
+ D:/software_production/CLion\ 2024.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/exception.h \
+ D:/software_production/CLion\ 2024.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/functexcept.h \
+ D:/software_production/CLion\ 2024.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/exception_defines.h \
+ D:/software_production/CLion\ 2024.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/move.h \
+ D:/software_production/CLion\ 2024.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/cpp_type_traits.h \
  D:/software_production/CLion\ 2024.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/localefwd.h \
  D:/software_production/CLion\ 2024.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/c++locale.h \
  D:/software_production/CLion\ 2024.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/clocale \
  D:/software_production/CLion\ 2024.1.3/bin/mingw/x86_64-w64-mingw32/include/locale.h \
+ D:/software_production/CLion\ 2024.1.3/bin/mingw/x86_64-w64-mingw32/include/crtdefs.h \
  D:/software_production/CLion\ 2024.1.3/bin/mingw/x86_64-w64-mingw32/include/stdio.h \
  D:/software_production/CLion\ 2024.1.3/bin/mingw/x86_64-w64-mingw32/include/sec_api/stdio_s.h \
+ D:/software_production/CLion\ 2024.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/iosfwd \
  D:/software_production/CLion\ 2024.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cctype \
  D:/software_production/CLion\ 2024.1.3/bin/mingw/x86_64-w64-mingw32/include/ctype.h \
- D:/software_production/CLion\ 2024.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/ios_base.h \
- D:/software_production/CLion\ 2024.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ext/atomicity.h \
- D:/software_production/CLion\ 2024.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/gthr.h \
- D:/software_production/CLion\ 2024.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/gthr-default.h \
- D:/software_production/CLion\ 2024.1.3/bin/mingw/x86_64-w64-mingw32/include/pthread.h \
- D:/software_production/CLion\ 2024.1.3/bin/mingw/x86_64-w64-mingw32/include/errno.h \
- D:/software_production/CLion\ 2024.1.3/bin/mingw/x86_64-w64-mingw32/include/sys/types.h \
- D:/software_production/CLion\ 2024.1.3/bin/mingw/x86_64-w64-mingw32/include/process.h \
- D:/software_production/CLion\ 2024.1.3/bin/mingw/x86_64-w64-mingw32/include/corecrt_startup.h \
- D:/software_production/CLion\ 2024.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/limits.h \
- D:/software_production/CLion\ 2024.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/syslimits.h \
- D:/software_production/CLion\ 2024.1.3/bin/mingw/x86_64-w64-mingw32/include/limits.h \
- D:/software_production/CLion\ 2024.1.3/bin/mingw/x86_64-w64-mingw32/include/signal.h \
- D:/software_production/CLion\ 2024.1.3/bin/mingw/x86_64-w64-mingw32/include/pthread_signal.h \
- D:/software_production/CLion\ 2024.1.3/bin/mingw/x86_64-w64-mingw32/include/time.h \
- D:/software_production/CLion\ 2024.1.3/bin/mingw/x86_64-w64-mingw32/include/sys/timeb.h \
- D:/software_production/CLion\ 2024.1.3/bin/mingw/x86_64-w64-mingw32/include/sec_api/sys/timeb_s.h \
- D:/software_production/CLion\ 2024.1.3/bin/mingw/x86_64-w64-mingw32/include/_timeval.h \
- D:/software_production/CLion\ 2024.1.3/bin/mingw/x86_64-w64-mingw32/include/pthread_time.h \
- D:/software_production/CLion\ 2024.1.3/bin/mingw/x86_64-w64-mingw32/include/pthread_compat.h \
- D:/software_production/CLion\ 2024.1.3/bin/mingw/x86_64-w64-mingw32/include/pthread_unistd.h \
- D:/software_production/CLion\ 2024.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/atomic_word.h \
- D:/software_production/CLion\ 2024.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_classes.h \
- D:/software_production/CLion\ 2024.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/string \
- D:/software_production/CLion\ 2024.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/allocator.h \
- D:/software_production/CLion\ 2024.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/c++allocator.h \
- D:/software_production/CLion\ 2024.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/new_allocator.h \
- D:/software_production/CLion\ 2024.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/functexcept.h \
- D:/software_production/CLion\ 2024.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/cpp_type_traits.h \
  D:/software_production/CLion\ 2024.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/ostream_insert.h \
  D:/software_production/CLion\ 2024.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/cxxabi_forced.h \
  D:/software_production/CLion\ 2024.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_iterator_base_funcs.h \
@@ -107,14 +73,19 @@ CMakeFiles/RTree.dir/main.cpp.obj: \
  D:/software_production/CLion\ 2024.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stl_construct.h \
  D:/software_production/CLion\ 2024.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/string_view \
  D:/software_production/CLion\ 2024.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/functional_hash.h \
+ D:/software_production/CLion\ 2024.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/hash_bytes.h \
  D:/software_production/CLion\ 2024.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/string_view.tcc \
  D:/software_production/CLion\ 2024.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ext/string_conversions.h \
  D:/software_production/CLion\ 2024.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cstdlib \
  D:/software_production/CLion\ 2024.1.3/bin/mingw/x86_64-w64-mingw32/include/stdlib.h \
+ D:/software_production/CLion\ 2024.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/limits.h \
+ D:/software_production/CLion\ 2024.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/syslimits.h \
+ D:/software_production/CLion\ 2024.1.3/bin/mingw/x86_64-w64-mingw32/include/limits.h \
  D:/software_production/CLion\ 2024.1.3/bin/mingw/x86_64-w64-mingw32/include/sec_api/stdlib_s.h \
  D:/software_production/CLion\ 2024.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/stdlib.h \
  D:/software_production/CLion\ 2024.1.3/bin/mingw/x86_64-w64-mingw32/include/malloc.h \
  D:/software_production/CLion\ 2024.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/mm_malloc.h \
+ D:/software_production/CLion\ 2024.1.3/bin/mingw/x86_64-w64-mingw32/include/errno.h \
  D:/software_production/CLion\ 2024.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/std_abs.h \
  D:/software_production/CLion\ 2024.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cstdio \
  D:/software_production/CLion\ 2024.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cerrno \
@@ -122,9 +93,39 @@ CMakeFiles/RTree.dir/main.cpp.obj: \
  D:/software_production/CLion\ 2024.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/basic_string.tcc \
  D:/software_production/CLion\ 2024.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/memory_resource.h \
  D:/software_production/CLion\ 2024.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cstddef \
+ D:/software_production/CLion\ 2024.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/stddef.h \
+ D:/software_production/CLion\ 2024.1.3/bin/mingw/x86_64-w64-mingw32/include/stddef.h \
  D:/software_production/CLion\ 2024.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/uses_allocator.h \
  D:/software_production/CLion\ 2024.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/uses_allocator_args.h \
  D:/software_production/CLion\ 2024.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/tuple \
+ C:\Users\28927\Documents\RTree\Node.h \
+ D:/software_production/CLion\ 2024.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/iostream \
+ D:/software_production/CLion\ 2024.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ostream \
+ D:/software_production/CLion\ 2024.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ios \
+ D:/software_production/CLion\ 2024.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/exception \
+ D:/software_production/CLion\ 2024.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/exception_ptr.h \
+ D:/software_production/CLion\ 2024.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/cxxabi_init_exception.h \
+ D:/software_production/CLion\ 2024.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/typeinfo \
+ D:/software_production/CLion\ 2024.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/nested_exception.h \
+ D:/software_production/CLion\ 2024.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/ios_base.h \
+ D:/software_production/CLion\ 2024.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ext/atomicity.h \
+ D:/software_production/CLion\ 2024.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/gthr.h \
+ D:/software_production/CLion\ 2024.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/gthr-default.h \
+ D:/software_production/CLion\ 2024.1.3/bin/mingw/x86_64-w64-mingw32/include/pthread.h \
+ D:/software_production/CLion\ 2024.1.3/bin/mingw/x86_64-w64-mingw32/include/sys/types.h \
+ D:/software_production/CLion\ 2024.1.3/bin/mingw/x86_64-w64-mingw32/include/process.h \
+ D:/software_production/CLion\ 2024.1.3/bin/mingw/x86_64-w64-mingw32/include/corecrt_startup.h \
+ D:/software_production/CLion\ 2024.1.3/bin/mingw/x86_64-w64-mingw32/include/signal.h \
+ D:/software_production/CLion\ 2024.1.3/bin/mingw/x86_64-w64-mingw32/include/pthread_signal.h \
+ D:/software_production/CLion\ 2024.1.3/bin/mingw/x86_64-w64-mingw32/include/time.h \
+ D:/software_production/CLion\ 2024.1.3/bin/mingw/x86_64-w64-mingw32/include/sys/timeb.h \
+ D:/software_production/CLion\ 2024.1.3/bin/mingw/x86_64-w64-mingw32/include/sec_api/sys/timeb_s.h \
+ D:/software_production/CLion\ 2024.1.3/bin/mingw/x86_64-w64-mingw32/include/_timeval.h \
+ D:/software_production/CLion\ 2024.1.3/bin/mingw/x86_64-w64-mingw32/include/pthread_time.h \
+ D:/software_production/CLion\ 2024.1.3/bin/mingw/x86_64-w64-mingw32/include/pthread_compat.h \
+ D:/software_production/CLion\ 2024.1.3/bin/mingw/x86_64-w64-mingw32/include/pthread_unistd.h \
+ D:/software_production/CLion\ 2024.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/atomic_word.h \
+ D:/software_production/CLion\ 2024.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_classes.h \
  D:/software_production/CLion\ 2024.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_classes.tcc \
  D:/software_production/CLion\ 2024.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/system_error \
  D:/software_production/CLion\ 2024.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/error_constants.h \
@@ -178,23 +179,6 @@ CMakeFiles/RTree.dir/main.cpp.obj: \
  D:/software_production/CLion\ 2024.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cstdint \
  D:/software_production/CLion\ 2024.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/stdint.h \
  D:/software_production/CLion\ 2024.1.3/bin/mingw/x86_64-w64-mingw32/include/stdint.h \
- C:\Users\28927\Documents\RTree\RTree.h \
- C:\Users\28927\Documents\RTree\DataOutsourcing.h \
- C:\Users\28927\Documents\RTree\EncRTree.h \
- C:\Users\28927\Documents\RTree\EncNode.h \
- C:\Users\28927\Documents\RTree\DataProcessor.h \
- D:/software_production/CLion\ 2024.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/fstream \
- D:/software_production/CLion\ 2024.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/codecvt.h \
- D:/software_production/CLion\ 2024.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/basic_file.h \
- D:/software_production/CLion\ 2024.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/c++io.h \
- D:/software_production/CLion\ 2024.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/fstream.tcc \
- D:/software_production/CLion\ 2024.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/sstream \
- D:/software_production/CLion\ 2024.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/sstream.tcc \
- D:/software_production/CLion\ 2024.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/locale \
- D:/software_production/CLion\ 2024.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_facets_nonio.h \
- D:/software_production/CLion\ 2024.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ctime \
- D:/software_production/CLion\ 2024.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/time_members.h \
- D:/software_production/CLion\ 2024.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32/bits/messages_members.h \
- D:/software_production/CLion\ 2024.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_facets_nonio.tcc \
- D:/software_production/CLion\ 2024.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/locale_conv.h \
- D:/software_production/CLion\ 2024.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/codecvt
+ D:/software_production/CLion\ 2024.1.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cstring \
+ D:/software_production/CLion\ 2024.1.3/bin/mingw/x86_64-w64-mingw32/include/string.h \
+ D:/software_production/CLion\ 2024.1.3/bin/mingw/x86_64-w64-mingw32/include/sec_api/string_s.h
